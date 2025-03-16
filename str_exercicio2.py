@@ -19,7 +19,7 @@ if len(usuario) > 2:
 else: 
     email_escondido = prim_letra + "*" * (len(usuario)-1)+ "@" + dominio  
 
-print("Um link foi enviado para {}".format(email_escondido ))
+print("Um link foi enviado para {}".format(email_escondido )) #Imprime o e-mail escondido
 
 
 
