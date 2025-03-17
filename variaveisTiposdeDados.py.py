@@ -1,42 +1,84 @@
-#nome = input("Digite seu nome: ")
-#idade = int(input("Digite sua idade: "))
-#altura = float(input("Digite sua altura: "))
-#status = bool(input("Digite seu status: "))
-#
-#print(f"Seu nome é {nome}, você tem {idade} anos e {altura} de altura.")
-#
-#print(f"O tipo da variável nome é {type(nome)}")
-#print(f"O tipo da variável idade é {type(idade)}")
-#print(f"O tipo da variável altura é {type(altura)}")
-#print(f"O tipo da variável status é {type(status)}")
+##numero_int = 50 #Variável do tipo numero inteiro
+##numero_float = 2.5 #Variável do tipo numero float
+##texto = "Natan Vicente" #Varável do tipo String
+##logica = True #Variável do tipo lógica boolean
+##
+##print(type(numero_int))
+##print(type(numero_float))
+##print(type(texto))
+##print(type(logica))
 
-#Desafios
-#1 - Faça um programa que leia um número inteiro e o imprima.
-numero = int(input("Digite um número inteiro: "))
-print(f"O número digitado foi {numero}")
+# Exercício 1: Tipos de Dados e Print
+# Crie variáveis de diferentes tipos (int, float, string, bool) e imprima seus valores e tipos.
+nome = input("Favor digite o seu nome: ")
+idade = 37
+altura = 1.66
+male = True
+salario = 2000
 
-#2 - Faça um programa que leia um número real e o imprima.
-numero = float(input("Digite um número real: "))
-print(f"O número digitado foi {numero}")
+print(nome)
+print(type(nome))
 
-#3 - Peça ao usuário para digitar três valores inteiros e imprima a soma deles.
-numero1 = int(input("Digite o primeiro número inteiro: "))
-numero2 = int(input("Digite o segundo número inteiro: "))
-numero3 = int(input("Digite o terceiro número inteiro: "))
-soma = numero1 + numero2 + numero3
-print(f"A soma dos números digitados é {soma}")
+print(idade)
+print(type(idade))
 
-#4 - Peça ao usuário para digitar um número e imprima o quadrado dele.
-numero = int(input("Digite um número: "))
-quadrado = numero ** 2
-print(f"O quadrado do número digitado é {quadrado}")
+print(altura)
+print(type(altura))
 
-#5 - Faça um programa que leia o salário de um funcionário e o percentual de aumento, calcule e mostre o valor do aumento e o novo salário.
-salario = float(input("Digite o salário do funcionário: "))
-percentual = float(input("Digite o percentual de aumento: "))
-aumento = salario * percentual / 100
-novoSalario = salario + aumento
-print(f"O aumento foi de R${aumento:.2f} e o novo salário é R${novoSalario:.2f}")
+print(male)
+print(type(male))
+
+print(salario)
+print(type(salario))
+
+# Exercício 2: Conversão de Tipos
+# Converta um número para string e vice-versa, depois exiba os resultados.
+new_salario = int(salario)
+new_idade = str(idade)
+
+print(new_idade,new_salario)
+print(type(new_idade))
+print(type(new_salario))
+ 
+ #Exercício 3: Operações com Variáveis
+ #Peça para o usuário inserir dois números, some-os e mostre o resultado.
+sal_jan = int(input("Insira o salário de Janeiro:"))
+sal_fev = int(input("Insira o salário de Fevereiro:"))
+sal_mar = int(input("Insira o salário de Março:"))
+
+soma_sal = sal_jan + sal_fev + sal_mar
+poupa = soma_sal * 0.1 
+porcent = (poupa / soma_sal) * 100
+valor_poupado = soma_sal - poupa 
+print(f"Você recebeu R${soma_sal:.2f} em 3 meses")
+print(f"Você poupou R${poupa:.2f} ({porcent:.0f}% dos ganhos totais nesse periodo) ")
+ 
+#Exercício 4: Manipulação de Strings
+#Peça ao usuário para digitar um nome e exiba a quantidade de caracteres e o nome em maiúsculas.
+number_letter = len(nome)
+upper = nome.upper()
+
+print(number_letter)
+print(upper)
+
+
+
+# Exercício 5: Booleanos e Condições
+# Peça ao usuário para inserir um número e verifique se ele é positivo, negativo ou zero.
+
+numero = int(input("favor digite um número:"))
+
+if numero > 0:
+    print(f"Número {numero} é Positivo")
+elif numero < 0:
+    print(f"Número {numero} é Negativo")
+else:
+    print("Número igual a Zero")
+ 
+
+
+
+
 
 
 
