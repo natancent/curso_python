@@ -72,7 +72,7 @@
 #Se o palpite for menor: "Muito baixo! Tente um número maior."
 
 numero_secreto = 7
-pontos = 10
+pontos = 100
 
 
 while pontos > 0:
