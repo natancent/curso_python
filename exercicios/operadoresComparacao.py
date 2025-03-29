@@ -71,9 +71,11 @@
 #
 #Se o palpite for menor: "Muito baixo! Tente um número maior."
 
-numero_secreto = 7
+#numero_secreto = 7
+import random
+numero_secreto = random.randint(1, 10)
 pontos = 100
-
+tentativa = 1
 
 while pontos > 0:
     try: 
@@ -84,13 +86,15 @@ while pontos > 0:
             continue  # Volta para o início do loop sem perder pontos
         
         if palpite == numero_secreto:
-            print("Parabéns , acertou!")
+            print(f"Parabéns o número é {numero_secreto}, você acertou na tentativa {tentativa} !")
             break
         elif palpite < numero_secreto:
             pontos -= 10
+            tentativa += 1
             print(f"Muito baixo,você tem {pontos} pontos!")
         elif palpite > numero_secreto:
             pontos -= 10
+            tentativa += 1
             print(f"Número muito alto , você tem {pontos} pontos!")
         
     except ValueError:
